@@ -225,7 +225,7 @@
                     <navigationItem key="navigationItem" id="gX7-me-gqv">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="vGF-9s-RBa">
                             <connections>
-                                <segue destination="eqK-wA-bcZ" kind="show" id="sHY-Lp-o9X"/>
+                                <segue destination="eqK-wA-bcZ" kind="show" id="xGX-Sh-TDj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -244,7 +244,7 @@
         <!--Settings View Controller-->
         <scene sceneID="4Ju-ce-97X">
             <objects>
-                <viewController id="eqK-wA-bcZ" customClass="SettingsViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eqK-wA-bcZ" customClass="SettingsViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Pt-FH-G1z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

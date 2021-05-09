@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let currentColor =  UserDefaults.standard.integer(forKey: "isDarkMode")
-        print(currentColor)
         if(currentColor == 1){
             overrideUserInterfaceStyle = .dark
         } else {
