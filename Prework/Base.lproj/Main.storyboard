@@ -23,6 +23,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ue7-fr-Wpp">
+                                <rect key="frame" x="20" y="306" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="4PF-3g-CoQ"/>
+                                </connections>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJe-ph-9FH">
                                 <rect key="frame" x="1" y="424" width="129" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,22 +201,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prJ-we-cF2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="217"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="71"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ue7-fr-Wpp">
-                                <rect key="frame" x="20" y="306" width="374" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-ER-gdv">
+                                <rect key="frame" x="66" y="105" width="282" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="15%"/>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
                                 </segments>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="4PF-3g-CoQ"/>
+                                    <action selector="darModeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="GM1-Tb-JF0"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -220,6 +231,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billAmountLabel" destination="prJ-we-cF2" id="UUB-GQ-YRt"/>
+                        <outlet property="darkMode" destination="u6w-ER-gdv" id="Yeg-Kg-Gnd"/>
                         <outlet property="tipAmountLabel" destination="uWA-Dn-EEd" id="BCg-7m-q6o"/>
                         <outlet property="tipControl" destination="ue7-fr-Wpp" id="RbW-VC-NpB"/>
                         <outlet property="totalLabel" destination="tRC-GL-IOr" id="gQY-76-y2R"/>
@@ -243,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZF-sG-sCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2110" y="58"/>
+            <point key="canvasLocation" x="2107.2463768115945" y="57.589285714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YAf-97-czx">

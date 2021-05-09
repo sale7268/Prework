@@ -10,7 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     var numberOnScreen:Double = 0;
-
+    var mode = UserDefaults.standard.set(0, forKey: "isDarkMode")
+    
+    @IBOutlet weak var darkMode: UISegmentedControl!
     @IBOutlet weak var billAmountLabel: UILabel!
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
@@ -34,8 +36,27 @@ class ViewController: UIViewController {
         numberOnScreen = Double(billAmountLabel.text!)!
     }
     
+    @IBAction func darModeAction(_ sender: UISegmentedControl) {
+        if(darkMode.selectedSegmentIndex == 1){
+            UserDefaults.standard.set(1, forKey: "isDarkMode")
+            viewDidLoad()
+        } else {
+            UserDefaults.standard.set(0, forKey: "isDarkMode")
+            viewDidLoad()
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let currentColor =  UserDefaults.standard.integer(forKey: "isDarkMode")
+        print(currentColor)
+        if(currentColor == 1){
+            overrideUserInterfaceStyle = .dark
+        } else {
+            overrideUserInterfaceStyle = .light
+        }
         // Do any additional setup after loading the view.
     }
 
