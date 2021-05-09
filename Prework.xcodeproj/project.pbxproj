@@ -15,6 +15,7 @@
 		9A128C8925C14AAF00D084AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A128C8725C14AAF00D084AD /* LaunchScreen.storyboard */; };
 		9A128C9425C14AAF00D084AD /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A128C9325C14AAF00D084AD /* PreworkTests.swift */; };
 		9A128C9F25C14AAF00D084AD /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A128C9E25C14AAF00D084AD /* PreworkUITests.swift */; };
+		9A78CA042647CDFA00849D8C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78CA032647CDFA00849D8C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9A128C9A25C14AAF00D084AD /* PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A128C9E25C14AAF00D084AD /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		9A128CA025C14AAF00D084AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A78CA032647CDFA00849D8C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9A128C8525C14AAF00D084AD /* Assets.xcassets */,
 				9A128C8725C14AAF00D084AD /* LaunchScreen.storyboard */,
 				9A128C8A25C14AAF00D084AD /* Info.plist */,
+				9A78CA032647CDFA00849D8C /* SettingsViewController.swift */,
 			);
 			path = Prework;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				9A128C8125C14AAE00D084AD /* ViewController.swift in Sources */,
 				9A128C7D25C14AAE00D084AD /* AppDelegate.swift in Sources */,
 				9A128C7F25C14AAE00D084AD /* SceneDelegate.swift in Sources */,
+				9A78CA042647CDFA00849D8C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
